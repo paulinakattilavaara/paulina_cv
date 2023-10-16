@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../img/bakgrund3.webp);
+  font-family: Helvetica, sans-serif;
+}
+
+/* HEADER/NAVBAR */
+
+.nav-bar {
+  padding: 1rem;
+}
+
+.current {
+  border-bottom: 0.1rem solid rgb(18, 171, 201);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-family: "Poiret One";
+  font-size: 2rem;
+}
+
+.nav-link:hover {
+  color: gray;
+}
+
+/* MY PROFILE - HOMEPAGE */
+
+.profile {
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-img {
+  width: 30%;
+  height: auto;
+}
+
+.profile-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  max-width: 550px;
+}
+
+.profile-heading {
+  color: rgb(18, 171, 201);
+  padding: 1rem;
+}
+
+.profile-description {
+  margin: 1rem 2rem;
+}
+
+button {
+  border: none;
+  background-color: rgb(32, 121, 138);
+  color: lightgray;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+button:hover {
+  color: rgb(141, 134, 134);
+  animation-name: button-animation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+/* MY PROJECTS - HOMEPAGE */
+
+.projects {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-end;
+  gap: 3rem;
+  margin-right: 1.5rem;
+}
+
+.projects h2 {
+  background-color: rgba(72, 68, 68, 0.673);
+  color: #ffffffac;
+  font-size: 1.2rem;
+}
+
+.project-img1,
+.project-img2,
+.project-img3,
+.project-img4 {
+  max-height: 300px;
+  min-height: 250px;
+  min-width: 11rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.129);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-img1 {
+  background-image: url(../img/playing_card.png);
+}
+
+.project-img2 {
+  background-image: url(../img/responsive_menu.jpg);
+}
+
+.project-img3 {
+  background-image: url(../img/margaret.png);
+}
+
+.project-img4 {
+  background-image: url(../img/chas_header.jpg);
+}
+
+.card-text {
+  width: 100%;
+  text-align: center;
+}
+
+.card-text h2 {
+  padding: 0.6rem;
+}
+
+.card-text h2:hover {
+  color: rgb(55, 58, 61);
+}
+
+.project-link {
+  text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 1rem;
+  bottom: 0;
+  position: fixed;
+}
+
+.footer-link {
+  color: darkslategray;
+  text-decoration: none;
+  font-family: "Poiret One";
+  font-size: 1.6rem;
+}
+
+.footer-link:hover {
+  color: rgb(23, 39, 39);
+}
+
+/* media queries for home page & multiple pages */
+
+@media (max-width: 900px) {
+  .project-img1,
+  .project-img2,
+  .project-img3,
+  .project-img4 {
+    min-width: 7rem;
+    min-height: 120px;
+    max-width: 115px;
+  }
+
+  .projects h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .projects {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 582px) {
+  footer {
+    background-color: #030303e7;
+    border-radius: 10rem;
+  }
+}
+
+@media (max-width: 642px) {
+  .nav-list {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 408px) {
+  .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/* button animation */
+
+@keyframes button-animation {
+  from {
+    background-color: rgb(32, 121, 138);
+  }
+  to {
+    background-color: rgb(228, 160, 22);
+    transform: scale(1.1);
+  }
+}

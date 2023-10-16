@@ -1,0 +1,14 @@
+.contact-link {
+  color: rgb(104, 123, 123);
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: rgb(23, 39, 39);
+}
+
+@media (max-width: 880px) {
+  .contact-link {
+    color: rgb(46, 53, 53);
+  }
+}

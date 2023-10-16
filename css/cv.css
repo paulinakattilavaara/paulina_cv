@@ -1,0 +1,38 @@
+.cv {
+  background-color: rgba(255, 255, 255, 0.26);
+  border-radius: 10px;
+}
+
+.nr {
+  color: rgb(111, 104, 117);
+}
+
+.cv-category {
+  color: rgb(49, 45, 61);
+  font-size: 1rem;
+  margin: 0.8rem;
+}
+
+.cv-li {
+  list-style: none;
+}
+
+.cv-text {
+  font-size: 0.9rem;
+  padding: 0.2rem;
+}
+
+@media (max-width: 880px) {
+  .cv {
+    background-color: rgba(255, 255, 255, 0.489);
+  }
+}
+
+@media (max-width: 680px) {
+  .cv {
+    background-color: rgba(255, 255, 255, 0.684);
+  }
+  .cv-text {
+    font-size: 0.6rem;
+  }
+}

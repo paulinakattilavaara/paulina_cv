@@ -1,0 +1,29 @@
+.subpage {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+}
+
+.subpage-heading {
+  color: rgb(40, 111, 126);
+  padding: 1rem;
+}
+
+.subpage-text {
+  line-height: 1.8;
+  margin: 1.5rem;
+}
+
+.subpage-button {
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .subpage {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}

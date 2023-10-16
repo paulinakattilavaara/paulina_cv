@@ -1,0 +1,24 @@
+.project-page-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-page-img {
+  max-height: 15rem;
+}
+
+@media (max-width: 1210px) {
+  .project-page-img {
+    max-height: 8rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .project-page-img-container {
+    flex-direction: column;
+  }
+  .project-page-img {
+    max-width: 7rem;
+  }
+}
